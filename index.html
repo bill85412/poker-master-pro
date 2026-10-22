@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>River Math Support</title>
+<meta name="description" content="Help and contact for the River Math app.">
+<link rel="icon" href="icon.png">
+<style>
+:root{--bg:#EDF1EC;--surface:#FFFFFF;--ink:#16201B;--muted:#5C6A62;--line:#D3DBD5;--felt:#1E5A42;--felt2:#174A36;--brass:#A97A22;--gold:#F2D48C}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+.band{background:radial-gradient(120% 140% at 50% 0%,var(--felt) 0%,var(--felt2) 100%);color:#E6F1EA}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.band .wrap{padding-top:36px;padding-bottom:32px;display:flex;gap:18px;align-items:center}
+.band img{width:72px;height:72px;border-radius:16px;flex:none;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.band h1{margin:0;font-size:30px;line-height:1.1;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
+.band p{margin:4px 0 0;color:#9FC2AF;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+nav{display:flex;gap:20px;border-bottom:1px solid var(--line);margin-top:8px}
+nav a{padding:12px 0 10px;color:var(--muted);text-decoration:none;font-weight:600;border-bottom:3px solid transparent}
+nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--brass)}
+main{padding-top:24px;padding-bottom:48px}
+h2{font-size:20px;margin:32px 0 8px;line-height:1.3}
+h2:first-child{margin-top:8px}
+p,li{max-width:65ch}
+ul{padding-left:20px}
+li{margin:4px 0}
+a{color:var(--felt)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:12px 0}
+.card p{margin:0 0 6px}
+.card p:last-child{margin:0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0}
+summary{font-weight:600;cursor:pointer}
+details p{margin:8px 0 0}
+.muted{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding-top:16px;padding-bottom:32px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="band"><div class="wrap"><img src="icon.png" alt=""><div><h1>River Math</h1><p>Hold'em outs, odds &amp; bet advisor</p></div></div></header>
+<div class="wrap">
+<nav><a href="index.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+<main>
+<h2>Contact</h2>
+<div class="card">
+<p>Questions, bug reports or ideas: email <strong>YOUR-EMAIL</strong>.</p>
+<p>You can also open an issue on <a href="https://github.com/YOUR-USERNAME/river-math/issues">GitHub</a>.</p>
+<p class="muted">Please include your device model, iOS version and, for a wrong answer, the cards on screen.</p>
+</div>
+
+<h2>What River Math does</h2>
+<ul>
+<li><strong>Practice:</strong> four drills on counting outs, turning outs into equity, pot odds and hand combos, each with a worked answer.</li>
+<li><strong>Advisor:</strong> enter your cards, the board, the pot and the bet you face to get a simulated equity and a bet, call, raise, check or fold suggestion.</li>
+<li><strong>Chart:</strong> reference tables for common draws, outs to equity, and the equity needed to call each bet size.</li>
+</ul>
+
+<h2>Common questions</h2>
+<details><summary>Does River Math need an internet connection?</summary><p>No. Everything runs on your device.</p></details>
+<details><summary>Can I play poker or bet real money in the app?</summary><p>No. River Math is a study tool. There is no gameplay against other people and no way to place bets.</p></details>
+<details><summary>Why does the Advisor give slightly different numbers each time?</summary><p>It estimates equity by simulating 20,000 random hands, so results can move by about half a percentage point between runs. The suggested action rarely changes.</p></details>
+<details><summary>How accurate is the Advisor?</summary><p>It deals your opponents random hands from the range you choose. It can't read what their bets say about their cards, so after a big bet or raise, choose a tighter range.</p></details>
+<details><summary>Why did my drill score reset?</summary><p>Scores are kept only while the app is open. Closing the app starts them fresh.</p></details>
+<details><summary>Which devices are supported?</summary><p>iPhone and iPad running iOS 15 or later.</p></details>
+</main>
+<footer>© 2026 Po-Chih Lin · River Math for iPhone and iPad</footer>
+</div>
+</body>
+</html>
